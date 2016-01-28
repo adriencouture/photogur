@@ -1,0 +1,27 @@
+<h1>Edit Image</h1>
+
+<p>
+  <%= link_to 'Back', @image %>
+</p>
+
+<%= form_for @image do |i| %>
+<p>
+  <%= i.label :artist %><br>
+  <%= i.text_field :artist %>
+</p>
+
+<p>
+  <%= i.label :title %><br>
+  <%= i.text_field :title %>
+</p>
+
+<p>
+  <%= i.label :url %><br>
+  <%= i.text_field :url %>
+</p>
+
+<p>
+  <%= i.submit %>
+</p>
+
+<% end %>

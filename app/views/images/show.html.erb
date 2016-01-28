@@ -1,0 +1,6 @@
+<%= link_to 'Back to images', images_url %> | <%= link_to 'Edit', edit_image_path(@image) %> | <%= link_to 'Delete', @image, method: :delete, data: {confirm: "Are you sure you want to delete this image?"} %>
+
+<p><%= @image.title %>, <%= @image.artist %></p>
+<%= image_tag @image.url %>
+
+<!-- <img src="<%= @image.url %>"> -->

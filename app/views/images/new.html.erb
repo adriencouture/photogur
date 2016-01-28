@@ -1,0 +1,30 @@
+<h1>Add an Image</h1>
+
+<%= link_to 'Back to images', images_url %>
+
+<!-- Wrap this into a div. -->
+
+<%= form_for @image do |i| %>
+
+<!-- Divs are not necessary here. They could also be hosted in <p></p>'s. -->
+
+  <div class="field">
+    <%= i.label :title %>
+    <%= i.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= i.label :artist %>
+    <%= i.text_field :artist %>
+  </div>
+
+  <div class="field">
+    <%= i.label :url %>
+    <%= i.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= i.submit %>
+  </div>
+
+  <% end %>
